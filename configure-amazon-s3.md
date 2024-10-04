@@ -50,10 +50,11 @@ Add the following definitions to your `wp-config.php` file, adjusting the values
 ```php
 // Amazon S3 Configuration
 define('FLUENT_COMMUNITY_CLOUD_STORAGE', 'amazon_s3');
+define('FLUENT_COMMUNITY_CLOUD_STORAGE_ENDPOINT', 's3.amazonaws.com'); // change with alternative S3 endpoint 
 define('FLUENT_COMMUNITY_CLOUD_STORAGE_ACCESS_KEY', '********************');
 define('FLUENT_COMMUNITY_CLOUD_STORAGE_SECRET_KEY', '********************');
 define('FLUENT_COMMUNITY_CLOUD_STORAGE_BUCKET', 'your-bucket-name'); // change with your bucket name
- define('FLUENT_COMMUNITY_CLOUD_STORAGE_SUB_FOLDER', 'site-name'); // optional
+define('FLUENT_COMMUNITY_CLOUD_STORAGE_SUB_FOLDER', 'site-name'); // optional
  ```
 
 Replace the placeholder values with your actual Amazon S3 credentials and information.
